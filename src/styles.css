@@ -148,3 +148,23 @@
     color: var(--color-foreground);
   }
 }
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-ink-foreground: var(--ink-foreground);
+  --color-coral: var(--coral);
+  --color-sky: var(--sky);
+  --color-sun: var(--sun);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    font-variation-settings: "SOFT" 20, "WONK" 1;
+  }
+}
