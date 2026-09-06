@@ -73,13 +73,13 @@ function Home() {
               alt="Great For Greatness CBO logo"
               className="size-10 rounded-full object-cover"
             />
-            <span className="font-display text-base font-semibold leading-none">
+            <span className="font-display text-base leading-none">
               Great For
               <br />
               Greatness
             </span>
           </a>
-          <nav className="hidden items-center gap-7 text-sm font-medium md:flex">
+          <nav className="hidden items-center gap-7 text-sm md:flex">
             <a href="#story" className="hover:text-primary">Our story</a>
             <a href="#programs" className="hover:text-primary">Programs</a>
             <a href="#gallery" className="hover:text-primary">Community</a>
@@ -87,7 +87,7 @@ function Home() {
           </nav>
           <a
             href="#support"
-            className="rounded-full bg-coral px-4 py-2 text-sm font-semibold text-ink-foreground transition-opacity hover:opacity-90"
+            className="rounded-full bg-coral px-4 py-2 text-sm text-ink-foreground transition-opacity hover:opacity-90"
           >
             Get involved
           </a>
@@ -106,11 +106,11 @@ function Home() {
           <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/30" />
           <div className="mx-auto flex max-w-6xl flex-col justify-center px-5 py-24 md:min-h-[82vh] md:py-32">
             <div className="max-w-2xl">
-              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs uppercase tracking-[0.18em] text-white backdrop-blur">
                 <span className="size-2 rounded-full bg-coral" />
                 Zimmerman · Nairobi, Kenya
               </p>
-              <h1 className="font-display text-4xl font-semibold leading-[1.08] tracking-tight text-white md:text-6xl">
+              <h1 className="font-display text-4xl leading-[1.08] tracking-tight text-white md:text-6xl">
                 Autism is not a disability —{" "}
                 <span className="text-coral">it is a different ability</span> to be valued.
               </h1>
@@ -122,13 +122,13 @@ function Home() {
               <div className="mt-9 flex flex-wrap gap-3">
                 <a
                   href="#support"
-                  className="rounded-full bg-coral px-7 py-3.5 text-sm font-semibold text-ink-foreground transition-opacity hover:opacity-90"
+                  className="rounded-full bg-coral px-7 py-3.5 text-sm text-ink-foreground transition-opacity hover:opacity-90"
                 >
                   Support our work
                 </a>
                 <a
                   href="#programs"
-                  className="rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/15"
+                  className="rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm text-white backdrop-blur transition-colors hover:bg-white/15"
                 >
                   See our programs
                 </a>
@@ -136,22 +136,22 @@ function Home() {
               <dl className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-white/15 pt-8">
                 <div>
                   <dt className="sr-only">Core programmes</dt>
-                  <dd className="font-display text-3xl font-semibold text-white">3</dd>
-                  <dd className="mt-1 text-xs font-medium uppercase tracking-wider text-white/60">
+                  <dd className="font-display text-3xl text-white">3</dd>
+                  <dd className="mt-1 text-xs uppercase tracking-wider text-white/60">
                     Core programmes
                   </dd>
                 </div>
                 <div>
                   <dt className="sr-only">Partners</dt>
-                  <dd className="font-display text-3xl font-semibold text-white">2</dd>
-                  <dd className="mt-1 text-xs font-medium uppercase tracking-wider text-white/60">
+                  <dd className="font-display text-3xl text-white">2</dd>
+                  <dd className="mt-1 text-xs uppercase tracking-wider text-white/60">
                     Key partners
                   </dd>
                 </div>
                 <div>
                   <dt className="sr-only">Community</dt>
-                  <dd className="font-display text-3xl font-semibold text-white">1</dd>
-                  <dd className="mt-1 text-xs font-medium uppercase tracking-wider text-white/60">
+                  <dd className="font-display text-3xl text-white">1</dd>
+                  <dd className="mt-1 text-xs uppercase tracking-wider text-white/60">
                     United community
                   </dd>
                 </div>
@@ -164,7 +164,7 @@ function Home() {
         <section id="story" className="border-y border-border bg-secondary/50">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1fr_1.1fr] md:py-20">
             <div>
-              <h2 className="font-display text-3xl font-semibold md:text-4xl">
+              <h2 className="font-display text-3xl md:text-4xl">
                 From a band to a movement
               </h2>
               <div className="mt-5 space-y-4 text-base leading-relaxed text-muted-foreground">
@@ -193,11 +193,11 @@ function Home() {
                 loading="lazy"
               />
               <div className="rounded-2xl bg-background p-5">
-                <p className="font-display text-3xl font-semibold text-primary">3</p>
+                <p className="font-display text-3xl text-primary">3</p>
                 <p className="mt-1 text-sm text-muted-foreground">Core programmes running</p>
               </div>
               <div className="rounded-2xl bg-background p-5">
-                <p className="font-display text-3xl font-semibold text-coral">2</p>
+                <p className="font-display text-3xl text-coral">2</p>
                 <p className="mt-1 text-sm text-muted-foreground">
                   Partners: Brook Centre &amp; Thee Joint
                 </p>
@@ -208,7 +208,7 @@ function Home() {
 
         {/* Programs */}
         <section id="programs" className="mx-auto max-w-6xl px-5 py-16 md:py-24">
-          <h2 className="font-display text-3xl font-semibold md:text-4xl">What we do</h2>
+          <h2 className="font-display text-3xl md:text-4xl">What we do</h2>
           <p className="mt-3 max-w-2xl text-muted-foreground">
             Three programmes, one belief: every child carries greatness worth drawing out.
           </p>
@@ -222,10 +222,10 @@ function Home() {
                   className="aspect-[4/3] w-full rounded-2xl object-cover"
                   loading="lazy"
                 />
-                <p className="mt-5 font-display text-sm font-semibold tracking-[0.2em] text-accent">
+                <p className="mt-5 font-display text-sm tracking-[0.2em] text-accent">
                   {p.tag}
                 </p>
-                <h3 className="mt-1 font-display text-2xl font-semibold">{p.title}</h3>
+                <h3 className="mt-1 font-display text-2xl">{p.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
               </article>
             ))}
@@ -235,7 +235,7 @@ function Home() {
         {/* Gallery */}
         <section id="gallery" className="bg-ink py-16 text-ink-foreground md:py-24">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="font-display text-3xl font-semibold md:text-4xl">
+            <h2 className="font-display text-3xl md:text-4xl">
               Moments from the community
             </h2>
             <p className="mt-3 max-w-2xl text-sm text-ink-foreground/70">
@@ -259,7 +259,7 @@ function Home() {
         <section id="support" className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="grid gap-10 rounded-3xl bg-primary p-8 text-primary-foreground md:grid-cols-2 md:p-12">
             <div>
-              <h2 className="font-display text-3xl font-semibold md:text-4xl">
+              <h2 className="font-display text-3xl md:text-4xl">
                 Help us grow the greatness
               </h2>
               <p className="mt-4 text-primary-foreground/80">
@@ -270,13 +270,13 @@ function Home() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
                   href="mailto:greatforgreatness75@gmail.com?subject=I%20want%20to%20support%20G4G"
-                  className="rounded-full bg-background px-6 py-3 text-sm font-semibold text-foreground"
+                  className="rounded-full bg-background px-6 py-3 text-sm text-foreground"
                 >
                   Email us
                 </a>
                 <a
                   href="tel:+254111724105"
-                  className="rounded-full border border-primary-foreground/40 px-6 py-3 text-sm font-semibold"
+                  className="rounded-full border border-primary-foreground/40 px-6 py-3 text-sm"
                 >
                   Call 0111 724 105
                 </a>
@@ -289,7 +289,7 @@ function Home() {
                 ["Partner", "Schools, centres and organisations working with autistic children."],
               ].map(([t, d]) => (
                 <li key={t} className="rounded-2xl bg-primary-foreground/10 p-5">
-                  <p className="font-display text-lg font-semibold">{t}</p>
+                  <p className="font-display text-lg">{t}</p>
                   <p className="mt-1 text-sm text-primary-foreground/80">{d}</p>
                 </li>
               ))}
@@ -307,7 +307,7 @@ function Home() {
                 alt="Great For Greatness CBO logo"
                 className="size-12 rounded-full object-cover"
               />
-              <p className="font-display text-xl font-semibold">Great For Greatness CBO</p>
+              <p className="font-display text-xl">Great For Greatness CBO</p>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
               Zimmerman, Nairobi, Kenya. In partnership with Thee Joint Band and the Brook Centre
@@ -315,7 +315,7 @@ function Home() {
             </p>
           </div>
           <div className="text-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
               Email
             </p>
             <a href="mailto:greatforgreatness75@gmail.com" className="mt-1 block hover:text-primary">
@@ -323,7 +323,7 @@ function Home() {
             </a>
           </div>
           <div className="text-sm">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
+            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
               Phone
             </p>
             <a href="tel:+254111724105" className="mt-1 block hover:text-primary">
