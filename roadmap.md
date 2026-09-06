@@ -1,4 +1,4 @@
 # Roadmap
 
-- [ ] Rebuild homepage hero: professional full-width design with photo background (use new uploaded team photo)
-- [ ] Add second new photo (Brook Centre) to the community gallery
+- [x] Rebuild homepage hero: professional full-width design with photo background (team photo)
+- [x] Add Brook Centre photo to the community gallery
