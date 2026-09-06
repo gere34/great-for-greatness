@@ -155,8 +155,8 @@
   --color-coral: var(--coral);
   --color-sky: var(--sky);
   --color-sun: var(--sun);
-  --font-display: "Fraunces", Georgia, serif;
-  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -165,6 +165,5 @@
   }
   h1, h2, h3, .font-display {
     font-family: var(--font-display);
-    font-variation-settings: "SOFT" 20, "WONK" 1;
   }
 }
