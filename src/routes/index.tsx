@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import logoAsset from "@/assets/g4g-logo.png.asset.json";
 import bannerAsset from "@/assets/g4g-banner.jpg.asset.json";
 import crowdAsset from "@/assets/g4g-awareness-crowd.jpg.asset.json";
 import guitarAsset from "@/assets/g4g-guitar.jpg.asset.json";
@@ -62,10 +63,12 @@ function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-          <a href="#top" className="flex items-center gap-2">
-            <span className="grid size-9 place-items-center rounded-full bg-primary font-display text-lg font-bold text-primary-foreground">
-              G
-            </span>
+          <a href="#top" className="flex items-center gap-2.5">
+            <img
+              src={logoAsset.url}
+              alt="Great For Greatness CBO logo"
+              className="size-10 rounded-full object-cover"
+            />
             <span className="font-display text-base font-semibold leading-none">
               Great For
               <br />
@@ -276,7 +279,14 @@ function Home() {
       <footer className="border-t border-border bg-secondary/40">
         <div className="mx-auto grid max-w-6xl gap-8 px-5 py-12 md:grid-cols-3">
           <div>
-            <p className="font-display text-xl font-semibold">Great For Greatness CBO</p>
+            <div className="flex items-center gap-3">
+              <img
+                src={logoAsset.url}
+                alt="Great For Greatness CBO logo"
+                className="size-12 rounded-full object-cover"
+              />
+              <p className="font-display text-xl font-semibold">Great For Greatness CBO</p>
+            </div>
             <p className="mt-2 text-sm text-muted-foreground">
               Zimmerman, Nairobi, Kenya. In partnership with Thee Joint Band and the Brook Centre
               for the Deaf and Autistic Children.
