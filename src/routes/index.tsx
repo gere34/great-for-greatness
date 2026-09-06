@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import logoAsset from "@/assets/g4g-logo.png.asset.json";
+import teamAsset from "@/assets/g4g-team.jpg.asset.json";
+import brookAsset from "@/assets/g4g-brook-centre.jpg.asset.json";
 import bannerAsset from "@/assets/g4g-banner.jpg.asset.json";
 import crowdAsset from "@/assets/g4g-awareness-crowd.jpg.asset.json";
 import guitarAsset from "@/assets/g4g-guitar.jpg.asset.json";
@@ -53,9 +55,11 @@ const programs = [
 
 const gallery = [
   { src: crowdAsset.url, alt: "Thee Joint performing to a crowd of children at an outreach event" },
+  { src: brookAsset.url, alt: "Children and mentors at the Brook Centre for the Deaf and Autistic Children" },
   { src: coloringAsset.url, alt: "A mentor helping a child colour a drawing at a G4G workshop" },
   { src: classroomAsset.url, alt: "A Great For Greatness learning session in progress" },
   { src: mentorAsset.url, alt: "A G4G mentor with a pupil at the Day of the African Child" },
+  { src: teamAsset.url, alt: "The Great For Greatness team with children at the Brook Centre" },
 ];
 
 function Home() {
@@ -92,49 +96,67 @@ function Home() {
 
       <main id="top">
         {/* Hero */}
-        <section className="mx-auto grid max-w-6xl gap-8 px-5 pb-14 pt-10 md:grid-cols-[1.05fr_1fr] md:items-center md:gap-12 md:pt-16">
-          <div>
-            <p className="mb-4 inline-flex rounded-full bg-secondary px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-secondary-foreground">
-              Zimmerman · Nairobi, Kenya
-            </p>
-            <h1 className="font-display text-[2.6rem] font-semibold leading-[1.05] tracking-tight md:text-6xl">
-              Autism is not a disability —{" "}
-              <span className="text-primary">it is a different ability</span> to be valued.
-            </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              Great For Greatness is a community-based organisation that grew out of the band Thee
-              Joint. We empower autistic children and orphans through music, organic urban farming
-              and awareness that changes how a whole neighbourhood shows up.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#support"
-                className="rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-              >
-                Support our work
-              </a>
-              <a
-                href="#programs"
-                className="rounded-full border border-border px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary"
-              >
-                See our programs
-              </a>
+        <section className="relative isolate overflow-hidden">
+          <img
+            src={teamAsset.url}
+            alt="The Great For Greatness team with children at the Brook Centre"
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+            loading="eager"
+          />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-ink via-ink/85 to-ink/30" />
+          <div className="mx-auto flex max-w-6xl flex-col justify-center px-5 py-24 md:min-h-[82vh] md:py-32">
+            <div className="max-w-2xl">
+              <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-white backdrop-blur">
+                <span className="size-2 rounded-full bg-coral" />
+                Zimmerman · Nairobi, Kenya
+              </p>
+              <h1 className="font-display text-4xl font-semibold leading-[1.08] tracking-tight text-white md:text-6xl">
+                Autism is not a disability —{" "}
+                <span className="text-coral">it is a different ability</span> to be valued.
+              </h1>
+              <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
+                Great For Greatness is a community-based organisation that grew out of the band
+                Thee Joint. We empower autistic children and orphans through music, organic urban
+                farming and awareness that changes how a whole neighbourhood shows up.
+              </p>
+              <div className="mt-9 flex flex-wrap gap-3">
+                <a
+                  href="#support"
+                  className="rounded-full bg-coral px-7 py-3.5 text-sm font-semibold text-ink-foreground transition-opacity hover:opacity-90"
+                >
+                  Support our work
+                </a>
+                <a
+                  href="#programs"
+                  className="rounded-full border border-white/30 bg-white/5 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/15"
+                >
+                  See our programs
+                </a>
+              </div>
+              <dl className="mt-14 grid max-w-md grid-cols-3 gap-6 border-t border-white/15 pt-8">
+                <div>
+                  <dt className="sr-only">Core programmes</dt>
+                  <dd className="font-display text-3xl font-semibold text-white">3</dd>
+                  <dd className="mt-1 text-xs font-medium uppercase tracking-wider text-white/60">
+                    Core programmes
+                  </dd>
+                </div>
+                <div>
+                  <dt className="sr-only">Partners</dt>
+                  <dd className="font-display text-3xl font-semibold text-white">2</dd>
+                  <dd className="mt-1 text-xs font-medium uppercase tracking-wider text-white/60">
+                    Key partners
+                  </dd>
+                </div>
+                <div>
+                  <dt className="sr-only">Community</dt>
+                  <dd className="font-display text-3xl font-semibold text-white">1</dd>
+                  <dd className="mt-1 text-xs font-medium uppercase tracking-wider text-white/60">
+                    United community
+                  </dd>
+                </div>
+              </dl>
             </div>
-          </div>
-
-          <div className="relative">
-            <img
-              src={crowdAsset.url}
-              alt="Thee Joint band performing at a Great For Greatness autism awareness event"
-              className="aspect-[4/3] w-full rounded-3xl object-cover shadow-lg"
-              loading="eager"
-            />
-            <img
-              src={coloringAsset.url}
-              alt="A volunteer guiding a child through a colouring activity"
-              className="absolute -bottom-8 left-4 hidden w-40 rounded-2xl border-4 border-background object-cover shadow-xl md:block"
-              loading="lazy"
-            />
           </div>
         </section>
 
@@ -219,7 +241,7 @@ function Home() {
             <p className="mt-3 max-w-2xl text-sm text-ink-foreground/70">
               Awareness days, music lessons, workshops and shared meals across Zimmerman and beyond.
             </p>
-            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-3">
               {gallery.map((g) => (
                 <img
                   key={g.src}
