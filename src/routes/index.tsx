@@ -1,16 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import logoAsset from "@/assets/g4g-logo.png.asset.json";
-import teamAsset from "@/assets/g4g-team.jpg.asset.json";
-import brookAsset from "@/assets/g4g-brook-centre.jpg.asset.json";
-import bannerAsset from "@/assets/g4g-banner.jpg.asset.json";
-import crowdAsset from "@/assets/g4g-awareness-crowd.jpg.asset.json";
-import guitarAsset from "@/assets/g4g-guitar.jpg.asset.json";
-import coloringAsset from "@/assets/g4g-coloring.jpg.asset.json";
-import classroomAsset from "@/assets/g4g-classroom.jpg.asset.json";
-import mealAsset from "@/assets/g4g-meal.jpg.asset.json";
-import mentorAsset from "@/assets/g4g-mentor.jpg.asset.json";
-
 const TITLE = "Great For Greatness CBO | Music, Farming & Autism Awareness";
 const DESCRIPTION =
   "Great For Greatness (G4G) is a Nairobi community-based organisation empowering autistic children and orphans through music therapy, organic urban farming and autism awareness.";
@@ -34,32 +23,47 @@ const programs = [
     tag: "01",
     title: "Music as therapy",
     body: "Instrument lessons led by the artists of Thee Joint. Rhythm opens up communication where words are hard, and every child gets an instrument in their hands.",
-    image: guitarAsset.url,
+    image: "/images/g4g-guitar.jpg",
     alt: "A young musician learning to play the guitar during a G4G session",
   },
   {
     tag: "02",
     title: "Organic urban farming",
     body: "Started for the Brook Centre and now growing across the community — food, life skills and calm, sensory-friendly work in the soil for children and caregivers.",
-    image: mealAsset.url,
+    image: "/images/g4g-meal.jpg",
     alt: "Children and volunteers sharing a meal at a G4G community gathering",
   },
   {
     tag: "03",
     title: "Autism awareness",
     body: "Outreach with Thee Joint Band teaching families and neighbours how to live with, support and love autistic children — because autism is a different ability.",
-    image: bannerAsset.url,
+    image: "/images/g4g-banner.jpg",
     alt: "Autism awareness banner at a Great For Greatness community event",
   },
 ];
 
 const gallery = [
-  { src: crowdAsset.url, alt: "Thee Joint performing to a crowd of children at an outreach event" },
-  { src: brookAsset.url, alt: "Children and mentors at the Brook Centre for the Deaf and Autistic Children" },
-  { src: coloringAsset.url, alt: "A mentor helping a child colour a drawing at a G4G workshop" },
-  { src: classroomAsset.url, alt: "A Great For Greatness learning session in progress" },
-  { src: mentorAsset.url, alt: "A G4G mentor with a pupil at the Day of the African Child" },
-  { src: teamAsset.url, alt: "The Great For Greatness team with children at the Brook Centre" },
+  {
+    src: "/images/g4g-awareness-crowd.jpg",
+    alt: "Thee Joint performing to a crowd of children at an outreach event",
+  },
+  {
+    src: "/images/g4g-brook-centre.jpg",
+    alt: "Children and mentors at the Brook Centre for the Deaf and Autistic Children",
+  },
+  {
+    src: "/images/g4g-coloring.jpg",
+    alt: "A mentor helping a child colour a drawing at a G4G workshop",
+  },
+  { src: "/images/g4g-classroom.jpg", alt: "A Great For Greatness learning session in progress" },
+  {
+    src: "/images/g4g-mentor.jpg",
+    alt: "A G4G mentor with a pupil at the Day of the African Child",
+  },
+  {
+    src: "/images/g4g-team.jpg",
+    alt: "The Great For Greatness team with children at the Brook Centre",
+  },
 ];
 
 function Home() {
@@ -69,7 +73,7 @@ function Home() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
           <a href="#top" className="flex items-center gap-2.5">
             <img
-              src={logoAsset.url}
+              src="/images/g4g-logo.png"
               alt="Great For Greatness CBO logo"
               className="size-10 rounded-full object-cover"
             />
@@ -80,10 +84,18 @@ function Home() {
             </span>
           </a>
           <nav className="hidden items-center gap-7 text-sm md:flex">
-            <a href="#story" className="hover:text-primary">Our story</a>
-            <a href="#programs" className="hover:text-primary">Programs</a>
-            <a href="#gallery" className="hover:text-primary">Community</a>
-            <a href="#support" className="hover:text-primary">Support us</a>
+            <a href="#story" className="hover:text-primary">
+              Our story
+            </a>
+            <a href="#programs" className="hover:text-primary">
+              Programs
+            </a>
+            <a href="#gallery" className="hover:text-primary">
+              Community
+            </a>
+            <a href="#support" className="hover:text-primary">
+              Support us
+            </a>
           </nav>
           <a
             href="#support"
@@ -98,7 +110,7 @@ function Home() {
         {/* Hero */}
         <section className="relative isolate overflow-hidden">
           <img
-            src={teamAsset.url}
+            src="/images/g4g-team.jpg"
             alt="The Great For Greatness team with children at the Brook Centre"
             className="absolute inset-0 -z-10 h-full w-full object-cover"
             loading="eager"
@@ -115,9 +127,9 @@ function Home() {
                 <span className="text-coral">it is a different ability</span> to be valued.
               </h1>
               <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85">
-                Great For Greatness is a community-based organisation that grew out of the band
-                Thee Joint. We empower autistic children and orphans through music, organic urban
-                farming and awareness that changes how a whole neighbourhood shows up.
+                Great For Greatness is a community-based organisation that grew out of the band Thee
+                Joint. We empower autistic children and orphans through music, organic urban farming
+                and awareness that changes how a whole neighbourhood shows up.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
                 <a
@@ -164,9 +176,7 @@ function Home() {
         <section id="story" className="border-y border-border bg-secondary/50">
           <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-[1fr_1.1fr] md:py-20">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl">
-                From a band to a movement
-              </h2>
+              <h2 className="font-display text-3xl md:text-4xl">From a band to a movement</h2>
               <div className="mt-5 space-y-4 text-base leading-relaxed text-muted-foreground">
                 <p>
                   G4G began as <strong className="text-foreground">Thee Joint</strong>, a group of
@@ -187,7 +197,7 @@ function Home() {
             </div>
             <div className="grid grid-cols-2 gap-4 self-start">
               <img
-                src={classroomAsset.url}
+                src="/images/g4g-classroom.jpg"
                 alt="A Great For Greatness learning session with children"
                 className="col-span-2 aspect-[16/9] w-full rounded-2xl object-cover"
                 loading="lazy"
@@ -222,9 +232,7 @@ function Home() {
                   className="aspect-[4/3] w-full rounded-2xl object-cover"
                   loading="lazy"
                 />
-                <p className="mt-5 font-display text-sm tracking-[0.2em] text-accent">
-                  {p.tag}
-                </p>
+                <p className="mt-5 font-display text-sm tracking-[0.2em] text-accent">{p.tag}</p>
                 <h3 className="mt-1 font-display text-2xl">{p.title}</h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
               </article>
@@ -235,9 +243,7 @@ function Home() {
         {/* Gallery */}
         <section id="gallery" className="bg-ink py-16 text-ink-foreground md:py-24">
           <div className="mx-auto max-w-6xl px-5">
-            <h2 className="font-display text-3xl md:text-4xl">
-              Moments from the community
-            </h2>
+            <h2 className="font-display text-3xl md:text-4xl">Moments from the community</h2>
             <p className="mt-3 max-w-2xl text-sm text-ink-foreground/70">
               Awareness days, music lessons, workshops and shared meals across Zimmerman and beyond.
             </p>
@@ -259,9 +265,7 @@ function Home() {
         <section id="support" className="mx-auto max-w-6xl px-5 py-16 md:py-24">
           <div className="grid gap-10 rounded-3xl bg-primary p-8 text-primary-foreground md:grid-cols-2 md:p-12">
             <div>
-              <h2 className="font-display text-3xl md:text-4xl">
-                Help us grow the greatness
-              </h2>
+              <h2 className="font-display text-3xl md:text-4xl">Help us grow the greatness</h2>
               <p className="mt-4 text-primary-foreground/80">
                 Instruments, seedlings, therapy sessions and awareness events are all powered by
                 people who choose to show up. Partner with us, volunteer your time, or donate what
@@ -303,7 +307,7 @@ function Home() {
           <div>
             <div className="flex items-center gap-3">
               <img
-                src={logoAsset.url}
+                src="/images/g4g-logo.png"
                 alt="Great For Greatness CBO logo"
                 className="size-12 rounded-full object-cover"
               />
@@ -315,17 +319,16 @@ function Home() {
             </p>
           </div>
           <div className="text-sm">
-            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              Email
-            </p>
-            <a href="mailto:greatforgreatness75@gmail.com" className="mt-1 block hover:text-primary">
+            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Email</p>
+            <a
+              href="mailto:greatforgreatness75@gmail.com"
+              className="mt-1 block hover:text-primary"
+            >
               greatforgreatness75@gmail.com
             </a>
           </div>
           <div className="text-sm">
-            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">
-              Phone
-            </p>
+            <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Phone</p>
             <a href="tel:+254111724105" className="mt-1 block hover:text-primary">
               0111 724 105
             </a>
